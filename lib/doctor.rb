@@ -6,4 +6,7 @@ class Doctor
     @@all
   end
 
+  def initialize(name)
+  end
+
 end
