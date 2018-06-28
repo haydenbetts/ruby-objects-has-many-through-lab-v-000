@@ -8,6 +8,7 @@ class Doctor
 
   def initialize(name)
     self.name = name
+    self.class.all << self
   end
 
   def new_appointment(date, patient)
