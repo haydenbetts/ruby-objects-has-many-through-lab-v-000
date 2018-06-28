@@ -10,4 +10,10 @@ class Patient
     self.name = name
     self.class.all << self
   end
+
+  def new_appointment(doctor, date)
+    appointment = Appointment.new(patient, self, date)
+    return appointment
+  end
+  
 end
