@@ -17,4 +17,8 @@ class Doctor
     return appointment
   end
 
+  def appointments
+    Appointment.all.select {|appointment| appointment.doctor = doctor}
+  end
+
 end
