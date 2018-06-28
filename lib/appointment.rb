@@ -11,6 +11,7 @@ class Appointment
     self.date = date
     self.patient = patient
     self.doctor = doctor
+    self.class.all << self
   end
 
 
