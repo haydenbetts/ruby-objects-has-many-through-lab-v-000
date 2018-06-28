@@ -18,11 +18,11 @@ class Doctor
   end
 
   def appointments
-    Appointment.all.select {|appointment| appointment.doctor = doctor}
+    Appointment.all.select {|appointment| appointment.doctor = self.doctor}
   end
 
   def patients
-    self.appointments.collect {|appointment| self.patient}
+    self.appointments.collect {|appointment| appointment.patient}
   end
 
 end
