@@ -8,5 +8,6 @@ class Patient
 
   def initialize(name)
     self.name = name
+    self.class.all << self
   end
 end
