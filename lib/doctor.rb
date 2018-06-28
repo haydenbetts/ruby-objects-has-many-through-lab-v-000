@@ -10,4 +10,10 @@ class Doctor
     self.name = name
   end
 
+  def new_appointment(date, patient)
+    appointment = Appointment.new(date)
+    appointment.patient = patient
+    appointment.doctor
+  end
+
 end
